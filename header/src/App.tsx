@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './component/Header';
-// import Navigation from './component/Navigation';
 
 const Home: React.FC = () => {
   return <h2>Home Page</h2>;
@@ -23,7 +22,6 @@ const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      {/* <Navigation /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
